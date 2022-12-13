@@ -25,6 +25,9 @@ const mediaSchema = new mongoose.Schema({
         minLength: 0,
         maxLength: 5,
       },
+    image: {
+        type: String
+    },
 
       lat: {
         type: Number,
