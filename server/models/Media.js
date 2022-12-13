@@ -4,7 +4,6 @@ const mediaSchema = new mongoose.Schema({
 
     postName: {
         type: String,
-        required: true,
         minLength: 3
     },
 
@@ -23,24 +22,20 @@ const mediaSchema = new mongoose.Schema({
 
     rating: {
         type: Number,
-        required: true,
         minLength: 0,
         maxLength: 5,
       },
 
       lat: {
         type: Number,
-        required: true,
       },
 
       long: {
         type: Number,
-        required: true,
       },
 
       username: {
         type: String,
-        required: true,
       },
 
 }, {timestamps: true})
